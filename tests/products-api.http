@@ -1,0 +1,30 @@
+###
+GET http://localhost:8000/api/products HTTP/1.1
+
+###
+GET http://localhost:8000/api/products/2 HTTP/1.1
+
+###
+POST http://localhost:8000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+   "name" : "Samsung A23",
+    "slug" : "samsung-a13-new",
+    "description" : "New Product",
+    "price" : 123.56
+}
+
+###
+PATCH http://localhost:8000/api/products/2 HTTP/1.1
+Content-Type: application/json
+
+{
+   "name" : "Samsung A33",
+    "slug" : "samsung-a23-new",
+    "description" : "New Product",
+    "price" : 333.56
+}
+
+###
+DELETE http://localhost:8000/api/products/3 HTTP/1.1
